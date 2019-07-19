@@ -1,0 +1,12 @@
+type Query {
+    helloWorld (
+    name: String @doc(description: "Who to greet?")
+): HelloWorld
+    @resolver(class: "Yireo\\ExampleGraphQl\\Model\\Resolver\\HelloWorld")
+    @doc(description: "Simple HelloWorld example")
+}
+
+type HelloWorld @doc(description: "HelloWorld answer") {
+    name: String @doc(description: "Original input")
+    result: String @doc(description: "Result")
+}
