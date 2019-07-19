@@ -10,3 +10,7 @@ type HelloWorld @doc(description: "HelloWorld answer") {
     name: String @doc(description: "Original input")
     result: String @doc(description: "Result")
 }
+
+type StoreConfig @doc(description: "The type contains information about a store config") {
+    foo : String @doc(description: "Dummy value added by Yireo_ExampleGraphQl")
+}
